@@ -1,0 +1,17 @@
+.vote-main-container {
+  display: none;
+}
+
+#vote-countdown {
+  color: white;
+  font-size: 2rem;
+}
+
+#vote-numbers {
+  display: none;
+}
+
+#vote-pointer {
+  position: relative;
+  top: 0;
+}
