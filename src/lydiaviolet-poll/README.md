@@ -1,7 +1,5 @@
 # Simple poll widget for Lydiaviolet
 
-## Introduction
-
 This is a simple poll widget for [Lydia Violet](https://www.twitch.tv/lydiaviolet). During her streams she asks a lot of times for the chat to vote on something. This widget makes it easier for the chat to vote.
 
 ## Installation
@@ -12,7 +10,7 @@ How to add the widget to your overlay is explained in the [StreamElements docume
 
 I recommend to create a new overlay for the poll widget, so you can easily add it to your stream at any scenes.
 
-## Configuration
+## Configuration
 
 The widget has the following configuration options:
 
@@ -34,17 +32,17 @@ Chat can vote as often as they want. If the option "Only unique" is enabled, onl
 
 The poll can be deactivated at any time by the streamer or a mod using the deactivation command.
 
-## Examples
+## Examples
 
-### Start a poll
+### Start a poll
 
 `!12`
 
-### Start a poll with a poll time of 15 seconds
+### Start a poll with a poll time of 15 seconds
 
 `!12 15`
 
-### Start a poll with a poll time of 15 seconds and a fade out delay of 5 seconds
+### Start a poll with a poll time of 15 seconds and a fade out delay of 5 seconds
 
 `!12 15 5`
 
