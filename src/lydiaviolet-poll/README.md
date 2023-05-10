@@ -14,8 +14,8 @@ I recommend to create a new overlay for the poll widget, so you can easily add i
 
 The widget has the following configuration options:
 
-- Activation Command: The command that activates the poll. This command should be used by the streamer/mods only. The default is `!12`.
-- Deactivation Command: The command that deactivates the poll. This command should be used by the streamer/mods only. The default is `!12stop`.
+- Activation Command: The command that activates the poll. This command can be used by the streamer/mods only. The default is `!12`.
+- Deactivation Command: The command that deactivates the poll. This command can be used by the streamer/mods only. The default is `!12stop`.
 - Poll time: The duration of the poll in seconds. The default is 30 seconds.
 - Progress bar width: The width of the progress bar in pixels. The default is 400 pixels. You should adjust this value to the width of your overlay.
 - Fade out delay: The time in seconds the poll widget waits before fading out. The default is 10 seconds.
