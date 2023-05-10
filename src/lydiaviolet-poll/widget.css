@@ -1,5 +1,12 @@
 .vote-main-container {
-  display: none;
+  /* display: none; */
+}
+
+.vote-top-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* NEW */
 }
 
 #vote-countdown {
@@ -11,7 +18,20 @@
   display: none;
 }
 
+.vote-hype {
+  display: none;
+}
+
+#vote-pepe-1 {
+  position: relative;
+  /* display: none; */
+}
+
+#vote-pepe-2 {
+  position: relative;
+  /* display: none; */
+}
+
 #vote-pointer {
   position: relative;
-  top: 0;
 }
