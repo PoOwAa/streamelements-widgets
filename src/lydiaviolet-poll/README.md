@@ -48,4 +48,4 @@ The poll can be deactivated at any time by the streamer or a mod using the deact
 
 ## Demo
 
-You can check out a demo of the widget [here](https://www.twitch.tv/videos/1815884499?filter=archives&sort=time).
+You can check out a demo of the widget [here](https://www.twitch.tv/videos/1817127719).
