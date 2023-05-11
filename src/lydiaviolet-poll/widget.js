@@ -10,6 +10,15 @@ let fadeOutTimeout;
 let time;
 let fadeOutAfter;
 
+// TODO: refactor this!
+let vote1HappyImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-1-happy.webp';
+let vote2HappyImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-2-happy.webp';
+let vote1MadgeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-1.webp';
+let vote2MadgeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-2.webp';
+let vote1ImgAnimated = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-1-animated.webp';
+let vote2ImgAnimated = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-2-animated.webp';
+let hypeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/hype.webp';
+
 // Calculates the position of the pointer in %
 function calculatePointerPosition() {
   if (voteCount === 0) {
@@ -55,6 +64,10 @@ function reset() {
   vote2 = 0;
   users = [];
 
+  $('#vote-pepe-1').attr('src', vote1HappyImg);
+  $('#vote-pepe-2').attr('src', vote2HappyImg);
+  $('.vote-hype').fadeOut(1);
+
   isActive = false;
 
   // Clear the interval and timeout
@@ -77,6 +90,9 @@ function countdown() {
     isActive = false;
     const winner = (vote1 === vote2) ? 'Draw' : (vote1 > vote2) ? 1 : 2;
     $('#vote-countdown').text(`W ${winner}!`);
+    $('#vote-pepe-1').attr('src', (winner === 1) ? vote1ImgAnimated : vote1MadgeImg);
+    $('#vote-pepe-2').attr('src', (winner === 2) ? vote2ImgAnimated : vote2MadgeImg);
+    $('.vote-hype').fadeIn();
 
     fadeOutTimeout = setTimeout(() => {
       reset();
@@ -95,12 +111,13 @@ window.addEventListener('onWidgetLoad', (obj) => {
 
   $('.vote-main-container').css('width', `${widgetOptions.progressBarWidth}px`);
 
-  // Set the progress bar size
+  // Set the size and position of the images
   $('#vote-progress-image').css('width', `${widgetOptions.progressBarWidth}px`);
-  
-  // Set the vote pointer size
+  $('.vote-hype').css('width', `${voteSize / 2}px`);
+  $('.vote-hype').css('height', `${voteSize / 2}px`);
+  $('#vote-pepe-1').css('width', `${voteSize}px`);
+  $('#vote-pepe-2').css('width', `${voteSize}px`);
   $('#vote-pointer').css('width', `${voteSize}px`);
-  $('#vote-pointer').css('height', `${voteSize}px`);
   $('#vote-pointer').css('left', `calc(50% - ${voteSize / 2}px)`);
 
   updateUI();
