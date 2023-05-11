@@ -11,13 +11,13 @@ let time;
 let fadeOutAfter;
 
 // TODO: refactor this!
-let vote1HappyImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-1-happy.webp';
-let vote2HappyImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-2-happy.webp';
-let vote1MadgeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-1.webp';
-let vote2MadgeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-2.webp';
-let vote1ImgAnimated = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-1-animated.webp';
-let vote2ImgAnimated = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/pepe-2-animated.webp';
-let hypeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/feature/libby-poll-animated/src/lydiaviolet-poll/hype.webp';
+let vote1HappyImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/pepe-1-happy.webp';
+let vote2HappyImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/pepe-2-happy.webp';
+let vote1MadgeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/pepe-1.webp';
+let vote2MadgeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/pepe-2.webp';
+let vote1ImgAnimated = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/pepe-1-animated.webp';
+let vote2ImgAnimated = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/pepe-2-animated.webp';
+let hypeImg = 'https://raw.githubusercontent.com/PoOwAa/streamelements-widgets/main/src/lydiaviolet-poll/hype.webp';
 
 // Calculates the position of the pointer in %
 function calculatePointerPosition() {
