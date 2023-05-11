@@ -6,16 +6,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* NEW */
+  align-items: center;
 }
 
 #vote-countdown {
   color: white;
   font-size: 2rem;
-}
-
-#vote-numbers {
-  display: none;
 }
 
 .vote-hype {
@@ -24,12 +20,10 @@
 
 #vote-pepe-1 {
   position: relative;
-  /* display: none; */
 }
 
 #vote-pepe-2 {
   position: relative;
-  /* display: none; */
 }
 
 #vote-pointer {
