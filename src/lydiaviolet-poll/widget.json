@@ -46,6 +46,6 @@
   },
   "widgetUpdateUrl": {
     "type": "hidden",
-    "value": "https://github.com/PoOwAa/streamelements-widgets/tree/main/src/lydiaviolet-poll"
+    "value": "https://github.com/PoOwAa/streamelements-widgets/blob/master/src/lydiaviolet-poll"
   }
 }

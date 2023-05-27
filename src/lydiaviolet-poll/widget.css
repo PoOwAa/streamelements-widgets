@@ -1,5 +1,6 @@
 .vote-main-container {
-    align-items: center;
+  display: none;
+  align-items: center;
 }
 
 .vote-top-row {
